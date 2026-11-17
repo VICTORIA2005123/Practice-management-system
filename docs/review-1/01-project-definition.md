@@ -6,7 +6,7 @@ Project (01CT3801), Department of Information and Communication Technology, Marw
 |---|---|
 | Student name | |
 | Enrolment number | |
-| Type of project (IDP/UDP/FDP) | |
+| Type of project (IDP/UDP/FDP) | IDP |
 | Individual or group | Individual |
 | Guide | |
 | Co-guide | |
@@ -19,7 +19,7 @@ A Keyboard-First Practice Management System for Small CA Firms with Automated Co
 
 <!-- HBK and [N clients, M staff] are placeholders. In the .docx they are bold red. -->
 
-A small chartered accountant's firm in India files the same returns for the same clients month after month: GST returns, TDS statements, income-tax returns, ROC filings. **HBK**, the firm this project is built with, handles **[N clients, M staff]**. Today that work is tracked in spreadsheets, paper diaries and WhatsApp messages. Nobody can see at a glance which return is pending, who has it, or what changed and when. Digital signature certificates (DSCs) expire quietly, and a filing then stalls on the due date. A missed date costs the client a late fee for every day of delay and costs the firm its credibility. This project builds a practice management system that creates this recurring work by itself, shows who holds each task, warns before DSCs expire, and records every change in an audit trail.
+A small chartered accountant's firm in India files the same returns for the same clients month after month: GST returns, TDS statements, income-tax returns, ROC filings. **HBK**, the firm this project is built with, handles **[N clients, M staff]**. Today that work is tracked in Excel spreadsheets and WhatsApp messages. Nobody can see at a glance which return is pending, who has it, or what changed and when. Digital signature certificates (DSCs) expire quietly, and a filing then stalls on the due date. A missed date costs the client a late fee for every day of delay and costs the firm its credibility. This project builds a practice management system that creates this recurring work by itself, shows who holds each task, warns before DSCs expire, and records every change in an audit trail.
 
 ## Who is affected
 
