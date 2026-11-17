@@ -59,10 +59,10 @@ Yes, because the scope is three modules and the technology is ordinary: a web ap
 ## C. Literature and existing tools
 
 **17. What existing software did you compare?**
-TallyPrime, Zoho Practice, an Indian CA-office product, Karbon and TaxDome. The table is in the literature survey.
+Five: TallyPrime, CompuOffice, Zoho Practice, Karbon and TaxDome. The table is in the literature survey.
 
 **18. Why not just buy one of them?**
-The foreign tools (Karbon, TaxDome) are built around US and UK practice. They don't know GSTR-3B or Indian DSCs, and they're priced per user in dollars. The Indian tools focus on preparing returns, not on running the office's workflow and audit trail. None of them combines Indian recurring compliance, DSC tracking and a full audit trail at a small firm's budget.
+They split in two. The Indian tools, Tally and CompuOffice, know GST and TDS but they prepare returns and keep books. They don't create next month's work or track who has it. The foreign tools, Zoho Practice, Karbon and TaxDome, run an office's workflow but know nothing about GSTR-3B or Indian DSCs, and they're priced in dollars. None of the five tracks DSC expiry.
 
 **19. What did the research papers tell you?**
 Three things kept coming up. Small firms adopt technology slowly, mostly because of cost and skills. Automation pays off on repetitive, rule-based work, which recurring compliance is. And most studies look at large firms or Western countries, which leaves small Indian practices unstudied.
@@ -71,10 +71,10 @@ Three things kept coming up. Small firms adopt technology slowly, mostly because
 Studies of practice software and automation focus on large firms and on preparing returns. None of the reviewed works addresses tracking recurring Indian compliance deadlines, DSC expiry and an audit trail together for a small firm.
 
 **21. How did you choose the papers?**
-Published in the last five years, peer-reviewed, and about one of: technology adoption in accounting firms, automation in accounting or tax work, tax technology in India, audit trails, data protection, or digital certificates. I read every abstract myself and recorded each paper's limitation.
+Twelve papers, published from 2022 to 2026, peer-reviewed, each checked against Crossref by its DOI. Each is about one of: technology adoption in accounting firms, automation in accounting work, GST practice in India, audit trails, data protection, digital certificates, or workflow systems. For each one I recorded whether a limitation is the authors' own or my reading of how it applies to a small CA firm. (Read the abstracts of all twelve before the review. The DOIs are in the reference list.)
 
 **22. Which paper influenced your design most?**
-Pick the one you remember best from the survey, and say which design decision it changed. Prepare this one yourself.
+Sheri and Jadav, 2025 [11], on certificate automation. They found that tracking certificates in spreadsheets causes outages, which is exactly HBK's DSC problem. But website certificates renew themselves, and a DSC needs a person to re-verify with the certifying authority. So I chose to track and warn 30 days early instead of trying to automate the renewal. (If another paper stuck with you more, prepare that one instead. The point is to name a paper and a decision it changed.)
 
 ## D. SDGs, sustainability and ethics
 
