@@ -33,7 +33,7 @@ The UN's indicators are national statistics, such as "annual growth rate of real
 **Target 9.c.** "Significantly increase access to information and communications technology..."
 
 **How the project serves it.**
-- Small professional firms are among the last businesses in India to leave Excel and WhatsApp. Large firms buy enterprise software. A 10-person practice usually can't afford it, and the tools it can afford are built for accounting, not for running the office (see the [literature survey](04-literature-survey.md)).
+- Small professional firms are among the last businesses in India to leave Excel and WhatsApp. Large firms buy enterprise software. A practice with no IT department usually can't run it, and the tools it can afford are built for accounting, not for running the office (see the [literature survey](04-literature-survey.md)).
 - The system runs in a browser and installs on a phone, so it needs no special hardware. It is built on free, open-source parts (Node.js, React, PostgreSQL), which keeps the cost within reach of a small firm.
 - Clients whose filings are current and recorded are easier to integrate into "value chains and markets": a buyer or a bank checking a supplier's GST compliance sees a clean record.
 

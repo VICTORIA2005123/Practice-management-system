@@ -24,7 +24,7 @@ This survey covers twelve research papers from 2022 to 2026 and five software pr
 | 9 | Mladinić, Vukić and Rončević, 2023 [9] | Online survey | 345 small and medium firms in Croatia | Small firms understand data-protection duties poorly and lack people and money to comply | My reading: EU and GDPR, not India. Shows what happens when small firms get no tooling. |
 | 10 | Berbecaru and Lioy, 2023 [10] | Measured certificates of the top 1 million websites, tested browsers | Web certificates, August 2021 | Browsers check certificate revocation incorrectly or incompletely | My reading: about website certificates, not signing DSCs on USB tokens. |
 | 11 | Sheri and Jadav, 2025 [11] | Built and deployed an automated certificate-renewal framework | One mid-sized organisation | Stated: tracking certificates by hand or in spreadsheets causes outages. Automation improved reliability. | My reading: server certificates renew themselves. An Indian DSC needs a person to re-verify, so software can only track and warn. |
-| 12 | Flechsig, Völker, Egger and Weske, 2022 [12] | 20 expert interviews, then a platform design | Requirements from interviews | Combining workflow management with RPA needs one integrated platform | My reading: built for large enterprises, too heavy for a 10-person office, and has no idea of statutory deadlines. |
+| 12 | Flechsig, Völker, Egger and Weske, 2022 [12] | 20 expert interviews, then a platform design | Requirements from interviews | Combining workflow management with RPA needs one integrated platform | My reading: built for large enterprises, too heavy for a CA office with no IT department, and has no idea of statutory deadlines. |
 
 ## What the papers say, in plain words
 
@@ -40,7 +40,7 @@ This survey covers twelve research papers from 2022 to 2026 and five software pr
 
 **Small businesses struggle with data-protection law.** Paper 9 shows that small firms in the EU understand GDPR poorly and lack the money to comply. Paper 8 warns that India's DPDP Act puts a heavy burden on small businesses. A CA firm is a small business holding very sensitive data. If the system builds the duties in (encryption, logging who saw what, a fixed retention period), the firm complies without hiring anyone.
 
-**Workflow platforms exist, but for big companies.** Paper 12 designs a platform that joins workflow management with RPA. It's built for enterprises with IT departments. A 10-person CA office needs the workflow without the platform.
+**Workflow platforms exist, but for big companies.** Paper 12 designs a platform that joins workflow management with RPA. It's built for enterprises with IT departments. A CA office with no IT department needs the workflow without the platform.
 
 ## Existing products
 

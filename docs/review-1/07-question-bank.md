@@ -10,7 +10,7 @@ Where an answer names **HBK** or a number in red in the Word copy, replace it wi
 Small CA firms lose track of recurring tax deadlines because the work lives in Excel and WhatsApp, and this system creates that work by itself, shows who holds it, and records every change.
 
 **2. Who is your user?**
-The staff and partners of a small chartered accountant's firm, 2 to 20 people. The firm's clients never log in. They benefit indirectly, through filings made on time.
+The staff and partners of a small or mid-sized chartered accountant's firm. HBK has 350 clients and 50 staff. The firm's clients never log in. They benefit indirectly, through filings made on time.
 
 **3. What is a practice management system?**
 Software for running a professional office rather than doing its accounting: which clients the firm has, what work is due for each, who is doing it, and what happened. Tally or Genius prepares a return. A practice management system makes sure somebody prepares it before the due date.
@@ -19,7 +19,7 @@ Software for running a professional office rather than doing its accounting: whi
 Excel can't create next month's task by itself, can't warn anyone, and can't say who changed a cell last March. Two people editing one sheet overwrite each other. It works for 20 clients and breaks at a few hundred.
 
 **5. What is a recurring compliance task? Give an example.**
-A filing that comes back every period. A GST-registered client files GSTR-3B every month, so that's 12 tasks a year per client, each with a due date, a preparer and a status. Multiply by hundreds of clients and you see why nobody should create them by hand.
+A filing that comes back every period. A GST-registered client files GSTR-3B every month, so that's 12 tasks a year per client, each with a due date, a preparer and a status. Multiply by HBK's 350 clients and you see why nobody should create them by hand.
 
 **6. What is a DSC and why track its expiry?**
 A Digital Signature Certificate is the electronic signature used to sign filings on the MCA and income-tax portals. It's issued for one or two years. If it expires, the filing can't be signed, and getting a new one takes days of verification. A warning 30 days ahead turns a missed deadline into a routine renewal.
@@ -120,7 +120,7 @@ One database trigger is attached to every table. On every insert, update or dele
 If code writes the audit row, one forgotten line in one new feature leaves a hole, and you discover the hole exactly when you need the trail. The database sees every change, however it arrives.
 
 **36. How are recurring tasks generated?**
-Each client is engaged for services, like monthly GST. Each service has a task template with its steps. A scheduled job looks at each engagement, works out which periods are due, and creates any missing task. Who gets the task is decided by a four-level cascade, and the first level that has an answer wins: a person named on that engagement, else the client's team, else the team that handles that service firm-wide, else the department the service belongs to. The last level always matches, so no task is left unassigned. I didn't name a person for every client-service pair because a firm with a thousand clients, three services each and three roles per service would need about nine thousand such entries, and nobody would keep them up to date.
+Each client is engaged for services, like monthly GST. Each service has a task template with its steps. A scheduled job looks at each engagement, works out which periods are due, and creates any missing task. Who gets the task is decided by a four-level cascade, and the first level that has an answer wins: a person named on that engagement, else the client's team, else the team that handles that service firm-wide, else the department the service belongs to. The last level always matches, so no task is left unassigned. I didn't name a person for every client-service pair because HBK's 350 clients, with three services each and three roles per service, would need over three thousand such entries, and nobody would keep them up to date.
 
 **37. What if the job runs twice? Do you get duplicate tasks?**
 No. The database allows only one generation per engagement and period (a unique index), so a duplicate can't be stored even if two runs overlap. A second run finds the task already exists and does nothing.
@@ -138,7 +138,7 @@ Password plus a six-digit code from an authenticator app (TOTP). Sessions expire
 With AES-256-GCM, using a key the server holds in its environment, outside the database. Someone who steals a database backup gets encrypted text, not passwords. GCM also detects tampering: a changed ciphertext fails to open instead of decrypting to garbage. Revealing a password needs a separate permission and a fresh authenticator code, and the reveal is logged.
 
 **42. How would it scale to a bigger firm?**
-A firm with 2,000 clients and a few dozen staff is small for PostgreSQL. Lists are paged, so screens load the same at any size. The real limit would be people needing finer permissions, not the database.
+HBK has 350 clients and 50 staff. Even ten times that is small for PostgreSQL. Lists are paged, so screens load the same at any size. The real limit would be people needing finer permissions, not the database.
 
 **43. Is it a mobile app?**
 It's a web app that installs on a phone or desktop and opens in its own window. One codebase serves both.
